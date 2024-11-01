@@ -279,7 +279,7 @@ X_test_pca = pca.transform(X_test_scaled)
 
 ## Getting Started
 
-- You can clone this repository using the following command:
+- You can clone this repository using the following command :
   ```
   git clone https://github.com/TheMrityunjayPathak/Feature-Engineering.git
   ```
@@ -308,7 +308,7 @@ X_test_pca = pca.transform(X_test_scaled)
 
 - You are free to use, modify and distribute the code in this repository.
 
-<div align='right'>
+<div align='left'>
   
 **[`^        Scroll to Top       ^`](#feature-engineering)**
 
