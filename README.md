@@ -294,7 +294,7 @@ X_test_pca = pca.transform(X_test_scaled)
    jupyter notebook
    ```
 
-- Open the desired notebook from the repository in your Jupyter Environment and start coding!
+- Open the desired notebook from the repository in your Jupyter environment and start coding!
 
 ## Contributing
 
