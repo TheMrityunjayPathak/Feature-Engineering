@@ -1,7 +1,7 @@
 ## Feature Engineering
 
-- Feature engineering is the process of using domain knowledge to extract or create features from raw data that make machine learning algorithms work better. 
-- It is a crucial step in the data preprocessing pipeline, as the quality and relevance of features directly impact the performance of predictive models.
+- Feature engineering is the process of transforming raw data into relevant information for use by machine learning models.
+- A feature, also called a dimension is an input variable used to generate model predictions.
 
 ## Theoretical Foundations
 
@@ -12,7 +12,7 @@
 
 | Type of Feature | Detail |
 |:---|:---|
-| Numerical | Continuous values (e.g. height, weight) or discrete values (e.g. counts). |
+| Numerical | Continuous values (e.g. height, weight) or Discrete values (e.g. counts) |
 | Categorical | Non-numerical values that represent categories (e.g. color, brand).  |
 | Ordinal | Categorical variables with a clear ordering (e.g. high school < bachelor < master). |
 | Binary | Variables that can take on one of two possible values (e.g. yes/no, true/false). |
@@ -25,7 +25,7 @@
 | Models | Detail |
 |:---|:---|
 | Linear | Perform well with linearly separable data. |
-| Tree | Naturally handle non-linear relationships but can benefit from well-defined feature engineering. |
+| Tree | Naturally handle linear and non-linear relationships. |
       
 **Curse of Dimensionality**
 
@@ -35,7 +35,7 @@
  
 **Feature Importance**
 
-- Understanding which features contribute most to the model’s predictions can guide feature selection and engineering efforts.
+- Understanding which features contribute most to the model’s predictions can guide feature selection.
 - Techniques like feature importance scores from tree-based models or recursive feature elimination can aid this process.
 
 ## Concepts Covered
@@ -126,7 +126,7 @@ pipeline.fit(X_train, y_train)
 ---
 
 ### Missing Categorical Data
-- Handling missing data in categorical variables can be done by replacing them with the most frequent category or using advanced techniques like KNN imputation.
+- Most common way to handling missing data in categorical variable is to replacing them with the most frequent category.
 
 ### Example
 ```python
@@ -165,10 +165,11 @@ X_imputed = imputer.fit_transform(X_numeric)
 ---
 
 ### Outlier Detection
-- Outliers can significantly impact the performance of a machine learning model. Several techniques can be employed for outlier detection.
+- Outliers can significantly impact the performance of a machine learning model.
+- Several techniques can be employed for outlier detection, like :
 
 ### Using IQR
-- The Interquartile Range (IQR) method detects outliers by calculating the range between the first (Q1) and third quartiles (Q3).
+- Interquartile Range detects outliers by calculating the range between the first (Q1) and third quartiles (Q3).
 
 ### Example
 ```python
@@ -179,7 +180,8 @@ outliers = (X < (Q1 - 1.5 * IQR)) | (X > (Q3 + 1.5 * IQR))
 ```
 
 ### Using Z-Score
-- Z-score measures how many standard deviations away an element is from the mean. A common threshold is 3 to -3.
+- Z-score measures how many standard deviations away an element is from the mean.
+- A common threshold is 3 to -3.
 
 ### Example
 ```python
@@ -240,17 +242,14 @@ X_transformed = transformer.fit_transform(X)
 
 ### Example
 ```python
-# Under Sampling
 from imblearn.under_sampling import RandomUnderSampler
 rus = RandomUnderSampler()
 X_rus, y_rus = rus.fit_resample(X_train, y_train)
 
-# Over Sampling
 from imblearn.over_sampling import RandomOverSampler
 ros = RandomOverSampler()
 X_ros, y_ros = ros.fit_resample(X_train, y_train)
 
-# Synthetic Minority Over-sampling Technique
 from imblearn.over_sampling import SMOTE
 smote = SMOTE()
 X_smote, y_smote = smote.fit_resample(X_train, y_train)
@@ -264,16 +263,12 @@ X_smote, y_smote = smote.fit_resample(X_train, y_train)
 
 ### Example
 ```python
-# Importing PCA
 from sklearn.decomposition import PCA
 
-# Creating PCA Object for 2 Features
 pca = PCA(n_components=2)
 
-# Fit and Transform on Training Data
 X_train_pca = pca.fit_transform(X_train_scaled)
 
-# Transforming Testing Data
 X_test_pca = pca.transform(X_test_scaled)
 ```
 
