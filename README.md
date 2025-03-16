@@ -56,7 +56,7 @@ X_standardized = scaler.fit_transform(X)
 
 ### Data Normalization
 - Normalization scales the features to a range between 0 and 1.
-- This technique is beneficial for algorithms that rely on distance measurements, like k-NN.
+- This technique is beneficial for algorithms that rely on distance measurements, like KNN.
 
 ### Example
 ```python
@@ -165,7 +165,7 @@ X_imputed = imputer.fit_transform(X_numeric)
 ---
 
 ### Outlier Detection
-- Outliers can significantly impact the performance of machine learning models. Several techniques can be employed for outlier detection.
+- Outliers can significantly impact the performance of a machine learning model. Several techniques can be employed for outlier detection.
 
 ### Using IQR
 - The Interquartile Range (IQR) method detects outliers by calculating the range between the first (Q1) and third quartiles (Q3).
@@ -179,7 +179,7 @@ outliers = (X < (Q1 - 1.5 * IQR)) | (X > (Q3 + 1.5 * IQR))
 ```
 
 ### Using Z-Score
-- Z-score measures how many standard deviations an element is from the mean. A common threshold is 3 to -3.
+- Z-score measures how many standard deviations away an element is from the mean. A common threshold is 3 to -3.
 
 ### Example
 ```python
@@ -221,7 +221,7 @@ X_transformed = transformer.fit_transform(X)
 ---
 
 ### Power Transformer
-- The `PowerTransformer` can help stabilize variance and make the data more Gaussian-like.
+- The `PowerTransformer` can help stabilize variance and make the data more gaussian-like.
 - This is useful for improving the performance of models that assume normally distributed data.
 
 ### Example
@@ -259,7 +259,7 @@ X_smote, y_smote = smote.fit_resample(X_train, y_train)
 ---
 
 ### Principal Component Analysis
-- Principal component analysis (PCA) reduces the number of dimensions in large datasets to principal components that retain most of the original information.
+- PCA reduces the number of dimensions in large datasets to principal components that retain most of the original information.
 - It does this by transforming potentially correlated variables into a smaller set of variables called principal components.
 
 ### Example
