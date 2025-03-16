@@ -1,7 +1,7 @@
 ## Feature Engineering
 
-- Feature engineering is the process of transforming raw data into relevant information for use by machine learning models.
 - A feature, also called a dimension is an input variable used to generate model predictions.
+- Feature engineering is the process of transforming raw data into relevant information for use by machine learning models.
 
 ## Theoretical Foundations
 
