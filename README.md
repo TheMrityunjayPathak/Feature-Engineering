@@ -36,7 +36,7 @@
 **Feature Importance**
 
 - Understanding which features contribute most to the model’s predictions can guide feature selection.
-- Techniques like feature importance scores from tree-based models or recursive feature elimination can aid this process.
+- Techniques like feature importance scores from tree-based models or recursive feature elimination can help.
 
 ## Concepts Covered
 
