@@ -1,6 +1,6 @@
 ## Feature Engineering
 
-- A feature, also called a dimension is an input variable used to generate model predictions.
+- A feature also called a dimension is an input variable used to generate model predictions.
 - Feature engineering is the process of transforming raw data into relevant information.
 
 ## Theoretical Foundations
@@ -153,7 +153,7 @@ X_imputed = imputer.fit_transform(X)
 ---
 
 ### SimpleImputer
-- The `SimpleImputer` is a straightforward way to handle missing values using different strategies (mean, median, most frequent, constant).
+- It is a simple way to handle missing values using different strategies (mean, median, most frequent, constant).
 
 ### Example
 ```python
