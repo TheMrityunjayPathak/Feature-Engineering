@@ -127,7 +127,7 @@ pipeline.fit(X_train, y_train)
 ---
 
 ### Missing Categorical Data
-- Most common way to handle missing data in categorical variable is to replacing them with the most frequent category.
+- Most common way to handle missing data in categorical variable is to replace them with most frequent category.
 
 ### Example
 ```python
@@ -140,7 +140,7 @@ X_imputed = imputer.fit_transform(X_categorical)
 ---
 
 ### KNNImputer
-- The `KNNImputer` uses the k-nearest neighbors algorithm to impute missing values, considering the values of similar data points.
+- It uses KNN algorithm to impute missing values, considering the similarity between data points.
 
 ### Example
 ```python
