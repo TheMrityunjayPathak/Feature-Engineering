@@ -103,7 +103,7 @@ X_transformed = preprocessor.fit_transform(X)
 ---
 
 ### Sklearn Pipeline
-- This enables you to streamline the preprocessing and modeling steps into a single object, ensuring that all steps are applied consistently.
+- This enables you to streamline the preprocessing and modeling steps into a single pipeline.
 
 ### Example
 ```python
@@ -120,13 +120,14 @@ pipeline.fit(X_train, y_train)
 ---
 
 ### Handling Mixed Variables
-- When your dataset contains both numerical and categorical variables, it's important to apply appropriate preprocessing to each type.
+- When your dataset contains both numerical and categorical variables,
+- It's important to apply appropriate preprocessing to each type.
 - Use `ColumnTransformer` as mentioned above for effective handling.
 
 ---
 
 ### Missing Categorical Data
-- Most common way to handling missing data in categorical variable is to replacing them with the most frequent category.
+- Most common way to handle missing data in categorical variable is to replacing them with the most frequent category.
 
 ### Example
 ```python
