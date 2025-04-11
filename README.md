@@ -166,7 +166,7 @@ X_imputed = imputer.fit_transform(X_numeric)
 ---
 
 ### Outlier Detection
-- Outliers can significantly impact the performance of a machine learning model.
+- Outliers can significantly impact the performance of a machine learning model (but not always).
 - Several techniques can be employed for outlier detection, like :
 
 ### Using IQR
@@ -259,8 +259,8 @@ X_smote, y_smote = smote.fit_resample(X_train, y_train)
 ---
 
 ### Principal Component Analysis
-- PCA reduces the number of dimensions in large datasets to principal components that retain most of the original information.
-- It does this by transforming potentially correlated variables into a smaller set of variables called principal components.
+- It reduces the number of dimensions in a large dataset by retaining most of the original information.
+- It does so by transforming potentially correlated variables into a smaller set of variables called principal components.
 
 ### Example
 ```python
