@@ -260,7 +260,7 @@ X_smote, y_smote = smote.fit_resample(X_train, y_train)
 
 ### Principal Component Analysis
 - It reduces the number of dimensions in a large dataset by retaining most of the original information.
-- It does so by transforming potentially correlated variables into a smaller set of variables called principal components.
+- It does so by transforming correlated variables into a smaller set of variables called principal components.
 
 ### Example
 ```python
