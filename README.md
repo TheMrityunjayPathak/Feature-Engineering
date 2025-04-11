@@ -83,7 +83,7 @@ X_encoded = encoder.fit_transform(X_categorical).toarray()
 ---
 
 ### Sklearn ColumnTransformer
-- The `ColumnTransformer` allows you to apply different preprocessing steps to different columns of your dataset in a concise way.
+- This allows you to apply different preprocessing steps to different columns of your dataset in a concise way.
 
 ### Example
 ```python
@@ -103,7 +103,7 @@ X_transformed = preprocessor.fit_transform(X)
 ---
 
 ### Sklearn Pipeline
-- The `Pipeline` class enables you to streamline the preprocessing and modeling steps into a single object, ensuring that all steps are applied consistently.
+- This enables you to streamline the preprocessing and modeling steps into a single object, ensuring that all steps are applied consistently.
 
 ### Example
 ```python
