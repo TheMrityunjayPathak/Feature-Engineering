@@ -1,12 +1,12 @@
 ## Feature Engineering
-
 - A feature also called a dimension is an input variable used to generate model predictions.
 - Feature engineering is the process of transforming raw data into relevant information.
+
+<hr>
 
 ## Theoretical Foundations
 
 **Understanding Features**
-  
 - Features are the input variables used by machine learning models to make predictions.
 - Each feature represents a specific aspect of the data.
 
@@ -18,7 +18,6 @@
 | Binary | Variables that can take on one of two possible values (e.g. yes/no, true/false). |
 
 **Feature Representation**
-  
 - The way features are represented can greatly affect a model’s ability to learn.
 - Different algorithms require different types of feature representations.
 
@@ -28,15 +27,15 @@
 | Tree | Naturally handle linear and non-linear relationships. |
       
 **Curse of Dimensionality**
-
 - As the number of features increases, the volume of the space increases leading to sparsity.
 - In high-dimensional space, data points become less similar making it difficult for algorithms to generalize well.
 - Effective feature engineering can mitigate this by reducing dimensionality.
  
 **Feature Importance**
-
 - Understanding which features contribute most to the model’s predictions can guide feature selection.
 - Techniques like feature importance scores from tree-based models or recursive feature elimination can help.
+
+<hr>
 
 ## Concepts Covered
 
@@ -273,35 +272,33 @@ X_train_pca = pca.fit_transform(X_train_scaled)
 X_test_pca = pca.transform(X_test_scaled)
 ```
 
+<hr>
+
 ## Getting Started
-
 - Clone this repository to your local machine by using the following command :
-   ```bash
-   git clone https://github.com/TheMrityunjayPathak/Feature-Engineering.git
-   ```
-
+ ```bash
+ git clone https://github.com/TheMrityunjayPathak/Feature-Engineering.git
+ ```
 - Install the Jupyter Notebook :
-   ```bash
-   pip install notebook
-   ```
-
+ ```bash
+ pip install notebook
+ ```
 - Launch the Jupyter Notebook :
-   ```bash
-   jupyter notebook
-   ```
+ ```bash
+ jupyter notebook
+ ```
+- Open the desired notebook from the repository in your Jupyter environment and start coding.
 
-- Open the desired notebook from the repository in your Jupyter environment and start coding!
+<hr>
 
 ## Contributing
-
 - Contributions are Welcome! 
-
 - If you'd like to contribute to this repository, feel free to submit a pull request.
 
+<hr>
+
 ## License
-
 - This repository is licensed under the [MIT License](LICENSE). 
-
 - You are free to use, modify and distribute the code in this repository.
 
 <div align='left'>
